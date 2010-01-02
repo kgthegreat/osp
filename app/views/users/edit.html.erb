@@ -1,0 +1,46 @@
+<h1>Edit username or password </h1>
+
+<div class="osp-form">
+
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+
+  <fieldset>
+  <legend>Enter User Detail</legend>
+
+  <div>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :size => 40 %>
+  </p>
+ </div>
+
+ <div>
+  <p>
+    <%= f.label :user_password, 'Password' %><br />
+    <%= f.password_field :password,:value => '', :size => 40 %>
+  </p>
+ </div>
+
+ <div>
+  <p>
+    <%= f.label :user_password_confirmation, 'Confirm' %><br />
+    <%= f.password_field :password_confirmation, :size => 40 %>
+  </p>
+ </div>
+
+ <div>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+ </div>
+
+ </fieldset>
+<% end %>
+
+</div>
+
+
+<%= link_to 'Show', @user %> |
+<%= link_to 'Back', users_path %>

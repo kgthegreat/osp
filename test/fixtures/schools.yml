@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+invalid_school_without_name:
+  description: yes
+
+invalid_school_without_description:
+  name: yes
+
+
+valid_school_with_name_description:
+  name: yes
+  description: yes
+
+invalid_school_without_name:
+  description: yes
+
+
+two:
+  name: MyString
+  description: MyText
+  image_url: MyString
+  address: MyText
+  phone: MyString
+  fax: MyString
+  website: MyString
+  email: MyString
+  curriculum: MyString

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>ONE SCHOOL, PLEASE! </title>
+    <!-- START:stylesheet -->
+    <%= stylesheet_link_tag "osp", :media => "all" %><!-- <label id="code.slt"/> -->
+    <!-- END:stylesheet -->
+    <%= javascript_include_tag :defaults %>
+  </head>
+  <body id="display">
+    <div id="banner">
+      <%= image_tag("logo.jpg") %>
+      <%= @page_title || "one school, please!" %>
+    </div>
+    <div id="columns">
+      <div id="side">
+        <% if @list != nil -%>
+          <% hidden_div_if(@list.items.empty?, :id => "list" ) do %>
+            <%= render(:partial => "list" , :object => @list) %>
+          <% end %>
+          <% end %>
+
+        <% if session[:user_id] %>
+        <br />
+        <%= link_to 'Orders', :controller => 'orders' %><br />
+        <%= link_to 'Schools', :controller => 'schools' %><br />
+        <%= link_to 'Users', :controller => 'users' %><br />
+        <%= link_to 'Display', :controller => 'display' %><br />
+        <br />
+        <%= link_to 'Logout', :controller => 'admin', :action => 'logout' %>
+        <% end %>
+      </div>
+
+      <div id="main">
+        <% if  flash[:notice] -%>
+          <div id="notice">
+            <%= flash[:notice] -%>
+          </div>
+  <% end -%>
+
+        <%= yield :layout %>
+
+      </div>
+    </div>
+  </body>
+</html>

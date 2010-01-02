@@ -1,0 +1,14 @@
+<% if list_item == @current_item -%>
+  <tr id="current_item">
+  <% else -%>
+  <tr>
+<% end -%>
+  <td><%=h list_item.name %></td>
+  <td>
+<% form_remote_tag :url => { :action => 'remove_from_list', :id => list_item } do %>
+  <%= submit_tag "Remove" %>
+<% end %>
+
+
+</td>
+</tr>

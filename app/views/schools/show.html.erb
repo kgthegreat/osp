@@ -1,0 +1,48 @@
+<p>
+  <b>Name:</b>
+  <%=h @school.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @school.description %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%=h @school.image_url %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @school.address %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @school.phone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%=h @school.fax %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%=h @school.website %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @school.email %>
+</p>
+
+<p>
+  <b>Curriculum:</b>
+  <%=h @school.curriculum %>
+</p>
+
+
+<%= link_to 'Edit', edit_school_path(@school) %> |
+<%= link_to 'Back', schools_path %>

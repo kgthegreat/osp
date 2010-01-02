@@ -1,0 +1,38 @@
+mkdir osp
+
+cd osp
+
+git init
+  touch README
+  
+git add README
+  
+git commit -m 'first commit'
+  
+git remote add origin git@github.com:kgthegreat/osp.git
+  
+git push origin master
+
+
+cd existing_git_repo
+  
+git remote add origin git@github.com:kgthegreat/osp.git
+  
+git push origin master
+
+
+
+git add .                     
+----------will ready all the changed and new file for commit
+git status
+----------will display list of files ready to be commited
+git commit -m 'first commit'
+git push origin master
+
+
+git rm filename               
+----------will remove the file from repo
+
+
+git clone <url>
+

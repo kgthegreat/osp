@@ -1,0 +1,33 @@
+<h1>Your results</h1>
+<%= @query -%>
+
+<% unless @results.empty? -%>
+
+
+
+<% for school in @results %>
+  <div class="entry">
+ <%= image_tag(school.image_url) %>
+        <td>
+          <dl>
+            <dt><%=h school.name %></dt>
+            <div id="add-list-line">
+              <% form_remote_tag  :url => {:action => "add_to_list" , :id => school} do %>
+              <%= submit_tag "Add to my List" -%>
+<% end %>
+    </div>
+
+
+            <dd><%=h truncate(school.description.gsub(/<.*?>/,''),:length => 180) %></dd><br />
+            <dd><b>Address:</b> <%=h school.address %> </dd>
+            <dd><b>Phone:</b> <%=h school.phone %> </dd>
+            <dd><b>Website:</b> <a href="<%= school.website %>"><%= school.website %></a> </dd>
+            <dd><b>Email:</b> <%=h school.email %> </dd>
+            <dd><b>Curriculum:</b> <%=h school.curriculum %> </dd>
+          </dl>
+        </td>
+  </div>
+<% end %>
+<% else %>
+Your query returned zero results
+<% end -%>

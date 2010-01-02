@@ -1,0 +1,11 @@
+page.select("div#notice" ).each { |div| div.hide }
+page.replace_html("list" , :partial => "list" , :object => @list)
+
+page[:list].visual_effect :blind_down if @list.items.size == 1
+
+page[:current_item].visual_effect :highlight,
+                                  :startcolor => '#88f88',
+                                  :endcolor => '#114411'
+
+
+

@@ -1,0 +1,187 @@
+/* Global styles */
+
+/* Styles for main page */
+#banner {
+    background: white; /* #D9265B;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+    font: small-caps 40px/40px "Times New Roman", serif;
+    color: #845172 ;
+    text-align: center;
+}
+
+#banner img {
+    float: left;
+    width:       208px;
+    height:       50px;
+}
+
+
+#columns {
+    background:white; /* #D9265B;*/
+}
+
+#main {
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-top: 2ex;
+    padding-left: 2em;
+    background: white;
+}
+
+#side {
+    float: right;
+    padding-top: 5ex;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    width: 10em;
+    background: white ; /*#845172 ;*/
+}
+
+#sideleft {
+    float: left;
+    padding-top: 5ex;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    width: 10em;
+    background: white ; /*#845172 ;*/
+}
+
+#side a {
+     font-size: small;
+}
+
+h1 {
+        font:  150% sans-serif;
+        color: #226;
+        border-bottom: 3px dotted #77d;
+}
+/*Style for notice box*/
+
+#notice {
+    border: 2px solid red;
+    margin-right: 10em;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #f0f0f0 ;
+    font: bold smaller sans-serif;
+    }
+
+ /* Styles for schools/index */
+
+#school-list table {
+        border-collapse: collapse;
+}
+
+#school-list table tr td {
+        padding: 5px;
+        vertical-align: top;
+}
+
+#school-list .list-image {
+  width:        260px;
+  height:       230px;
+}
+
+#school-list .list-description {
+  width:        60%;
+}
+
+#school-list .list-description dl {
+        margin: 0;
+}
+
+#school-list .list-description dt {
+        color:        #244;
+        font-weight:  bold;
+        font-size:    larger;
+}
+
+#school-list .list-description dd {
+        margin: 0;
+}
+
+#school-list .list-actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+}
+
+#school-list .list-line-even {
+  background:   #e0f8f8;
+}
+
+#school-list .list-line-odd {
+  background:   #f8b0f8;
+}
+
+
+/* An entry in the display catalog */
+
+#display  .entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77d;
+}
+
+#display  .title {
+  font-size: 120%;
+  font-family: sans-serif;
+}
+
+#display .entry img {
+  width: 270px;
+  height: 230px;
+  float: left;
+}
+
+
+#display .entry h3 {
+ margin-top: 0;
+ margin-bottom: 2px;
+ color: #227;
+}
+
+#display .entry p {
+ margin-top: 0.5em;
+ margin-bottom: 0.8em;
+}
+
+#display .entry .add-list-line {
+ clear: both;
+}
+
+#display .entry .add-to-list {
+  position: relative;
+}
+
+#display .entry  .list {
+  color: #44a;
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+#display .entry h3, #display .entry div {
+    display: inline;
+    }
+
+/*Style For List*/
+.list-title {
+    font: 120% bold;
+    color: black;
+}
+
+#list, #list table {
+    font-size: smaller;
+    color:       black;
+}
+
+
+#list table {
+    1px dotted #595 ;
+    border-top:
+    border-bottom: 1px dotted #595 ;
+    margin-bottom: 10px;
+}
+
